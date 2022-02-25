@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6545AED127C952DD00C09B19 /* Fruits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6545AED027C952DD00C09B19 /* Fruits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6545AED827C952FA00C09B19 /* RandomFruitGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545AED727C952FA00C09B19 /* RandomFruitGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6545AECD27C952DD00C09B19 /* Fruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6545AED027C952DD00C09B19 /* Fruits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fruits.h; sourceTree = "<group>"; };
+		6545AED727C952FA00C09B19 /* RandomFruitGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFruitGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				6545AED027C952DD00C09B19 /* Fruits.h */,
+				6545AED727C952FA00C09B19 /* RandomFruitGenerator.swift */,
 			);
 			path = Fruits;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					6545AECC27C952DD00C09B19 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6545AED827C952FA00C09B19 /* RandomFruitGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,8 @@
 		6545AED527C952DD00C09B19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +287,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +296,8 @@
 		6545AED627C952DD00C09B19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
